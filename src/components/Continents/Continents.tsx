@@ -64,7 +64,7 @@ const Continents: FC<Props> = () => {
     <Wrapper>
       {_.uniqWith(continents, _.isEqual).map((val: any) => (
         <Continent to={"/continents/" + val.code}>
-          <Paragraph>{val.continent}</Paragraph>
+          <Paragraph>{val.continent} {val.code}</Paragraph>
         </Continent>
       ))}
     </Wrapper>
